@@ -25,10 +25,11 @@ function Image({className, img}) {
     }
 
     return (
-        <div >
+        <div
             className={`${className} image-container`}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
+        >
             <img alt="" src={img.url} className="image-grid"/>
             {heartIcon()}
             {cartIcon()}
